@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 69, in script
+    call expression operacion["label"] from _call_expression
+  File "game/script.rpy", line 69, in <module>
+    call expression operacion["label"] from _call_expression
+NameError: name 'operacion' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 69, in script
+    call expression operacion["label"] from _call_expression
+  File "C:\Users\HP\Desktop\renpy-8.2.0-sdk (1)\renpy-8.2.0-sdk\renpy\ast.py", line 1411, in execute
+    label = renpy.python.py_eval(label)
+  File "C:\Users\HP\Desktop\renpy-8.2.0-sdk (1)\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\HP\Desktop\renpy-8.2.0-sdk (1)\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 69, in <module>
+    call expression operacion["label"] from _call_expression
+NameError: name 'operacion' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.1.24030407
+Pruebas 2 1.0
+Tue Jun  4 21:19:02 2024
